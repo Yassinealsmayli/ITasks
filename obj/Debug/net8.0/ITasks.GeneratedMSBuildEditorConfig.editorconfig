@@ -17,45 +17,45 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ITasks
 build_property.RootNamespace = ITasks
-build_property.ProjectDir = C:\Users\wolfb\OneDrive\Desktop\ITasks\
+build_property.ProjectDir = C:\Users\wolfb\OneDrive\Desktop\Projects\ITasks\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\wolfb\OneDrive\Desktop\ITasks
+build_property.MSBuildProjectDirectory = C:\Users\wolfb\OneDrive\Desktop\Projects\ITasks
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/wolfb/OneDrive/Desktop/ITasks/Pages/Error.cshtml]
+[C:/Users/wolfb/OneDrive/Desktop/Projects/ITasks/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wolfb/OneDrive/Desktop/ITasks/Pages/Index.cshtml]
+[C:/Users/wolfb/OneDrive/Desktop/Projects/ITasks/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wolfb/OneDrive/Desktop/ITasks/Pages/Login.cshtml]
+[C:/Users/wolfb/OneDrive/Desktop/Projects/ITasks/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wolfb/OneDrive/Desktop/ITasks/Pages/Privacy.cshtml]
+[C:/Users/wolfb/OneDrive/Desktop/Projects/ITasks/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wolfb/OneDrive/Desktop/ITasks/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/wolfb/OneDrive/Desktop/Projects/ITasks/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wolfb/OneDrive/Desktop/ITasks/Pages/_ViewImports.cshtml]
+[C:/Users/wolfb/OneDrive/Desktop/Projects/ITasks/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wolfb/OneDrive/Desktop/ITasks/Pages/_ViewStart.cshtml]
+[C:/Users/wolfb/OneDrive/Desktop/Projects/ITasks/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wolfb/OneDrive/Desktop/ITasks/Pages/Shared/_Layout.cshtml]
+[C:/Users/wolfb/OneDrive/Desktop/Projects/ITasks/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8kgxf3vds3
