@@ -1,4 +1,19 @@
 ﻿@page
-@model ITasks.Pages.Index1Model
+@model ITasks.Pages.LoginPModel
 @{
 }
+<link rel="stylesheet" href="~/css/LoginStyles.css" />
+<body>
+    <form method="post">
+        <label asp-for="@Model.vModel.Username"></label><br />
+        <input asp-for="@Model.vModel.Username" /><br />
+        <span asp-validation-for="@Model.vModel.Username"></span>
+        <label asp-for="@Model.vModel.Password"></label><br />
+        <input type="password" asp-for="@Model.vModel.Password" /><br />
+        <span asp-validation-for="@Model.vModel.Password"></span>
+        <input type="checkbox" asp-for="@Model.vModel.isAdmin" />
+        <label asp-for="@Model.vModel.isAdmin"></label><br />
+        <button type="submit">Login</button><br />
+        <div asp-validation-summary="All"></div><br />
+    </form>
+</body>
