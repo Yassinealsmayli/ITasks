@@ -15,6 +15,8 @@ namespace ITasks.Services
 
         ValueTask<User?> GetUser(int UID);
 
+        User? GetUser(string Username);
+
         ValueTask<User?> DeleteUser(int UID);
     }
 
@@ -46,6 +48,11 @@ namespace ITasks.Services
         public async ValueTask<User?> GetUser(int UID)
         {
             return await _context.Users.FindAsync(UID);
+        }
+
+        public User? GetUser(string Username)
+        {
+            return _context.Users.Where(u=>u.Username==Username).FirstOrDefault();
         }
 
         public void SetCurrentUser(User user)

@@ -1,21 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wolfb\\OneDrive\\Desktop\\ITasks\\",
+  "WorkspaceRootPath": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\itasks\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\itasks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\itasks\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\projects\\itasks\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\itasks\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\projects\\itasks\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\projects\\itasks\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\projects\\itasks\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\projects\\itasks\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\projects\\itasks\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\projects\\itasks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|c:\\users\\wolfb\\onedrive\\desktop\\projects\\itasks\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94CEC3CF-AAD4-47AA-96A4-A654CFB7AEB0}|ITasks.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -63,65 +79,128 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             }
           ]
         },
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class.cs",
-              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\ITasks\\Class.cs",
-              "RelativeDocumentMoniker": "Class.cs",
-              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\ITasks\\Class.cs",
-              "RelativeToolTip": "Class.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T15:26:25.409Z",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T16:45:59.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T16:32:24.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Pages\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T15:24:12.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tasks.cs",
+              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Models\\Tasks.cs",
+              "RelativeDocumentMoniker": "Models\\Tasks.cs",
+              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Models\\Tasks.cs",
+              "RelativeToolTip": "Models\\Tasks.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T07:51:33.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Models\\Users.cs",
+              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Models\\Users.cs",
+              "RelativeToolTip": "Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T07:46:33.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AppDbContext.cs",
+              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\AppDbContext.cs",
+              "RelativeToolTip": "AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T15:26:25.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\ITasks\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\ITasks\\Program.cs",
+              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T15:25:48.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\ITasks\\Pages\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\ITasks\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\Projects\\ITasks\\Pages\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T15:24:59.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\wolfb\\OneDrive\\Desktop\\ITasks\\Pages\\Login.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
-              "ToolTip": "C:\\Users\\wolfb\\OneDrive\\Desktop\\ITasks\\Pages\\Login.cshtml",
-              "RelativeToolTip": "Pages\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-31T15:24:12.981Z"
             }
           ]
         },
