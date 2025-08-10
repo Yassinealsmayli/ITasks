@@ -20,3 +20,44 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.task-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 4px solid #6c757d;
+}
+
+    .task-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+.task-overdue {
+    border-left-color: #dc3545 !important;
+}
+
+.task-urgent {
+    border-left-color: #fd7e14 !important;
+}
+
+.task-warning {
+    border-left-color: #ffc107 !important;
+}
+
+.task-normal {
+    border-left-color: #28a745 !important;
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 60px;
+}

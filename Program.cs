@@ -6,8 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 //Add DataBase using InMemory
 builder.Services.AddDbContext<AppDbContext>(option=>option.UseInMemoryDatabase("ITasksDb"));
 builder.Services.AddScoped<ITaskService,TaskService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<ICurrentUser, CurrentUser>();
+//Add caching 
+builder.Services.AddMemoryCache();
 // Add services to the container.
 builder.Services.AddRazorPages();
+//Add HardCoded Data 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

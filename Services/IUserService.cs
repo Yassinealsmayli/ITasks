@@ -5,9 +5,6 @@ namespace ITasks.Services
 {
     public interface IUserService
     {
-        void SetCurrentUser(User user);
-
-        User? GetCurrentUser();
 
         ValueTask<int> AddUser(User user);
 
@@ -24,7 +21,11 @@ namespace ITasks.Services
     {
         private AppDbContext _context;
 
-        public UserService(AppDbContext context) { _context = context; }
+
+        public UserService(AppDbContext context) {
+            _context = context;
+            _context.SaveChanges();
+        }
         public async ValueTask<int> AddUser(User user)
         {
             int uuid = (await _context.Users.AddAsync(user)).Entity.UID;
@@ -40,11 +41,6 @@ namespace ITasks.Services
             return user;
         }
 
-        public User? GetCurrentUser()
-        {
-            return AppDbContext.currentUser;
-        }
-
         public async ValueTask<User?> GetUser(int UID)
         {
             return await _context.Users.FindAsync(UID);
@@ -52,12 +48,9 @@ namespace ITasks.Services
 
         public User? GetUser(string Username)
         {
-            return _context.Users.Where(u=>u.Username==Username).FirstOrDefault();
-        }
-
-        public void SetCurrentUser(User user)
-        {
-            AppDbContext.currentUser = user;
+            if (_context.Users.Where(u => u.Username == Username).Count() != 0)
+                return _context.Users.Where(u => u.Username == Username).FirstOrDefault();
+            else return null;
         }
 
         public async ValueTask<int> UpdateUser(int UID, User user)

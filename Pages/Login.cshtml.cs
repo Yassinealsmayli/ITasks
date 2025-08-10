@@ -33,8 +33,7 @@ namespace ITasks.Pages
                 Password = bModel.Password,
                 isAdmin = bModel.isAdmin
             };
-            User? user = null;
-            List<string> err = service.Validation(bModel.Username,bModel.Password,bModel.isAdmin,out user);
+            List<string> err = service.Validation(bModel.Username, bModel.Password, bModel.isAdmin, out User? user);
 
             if (err.Count > 0) {
                 foreach (string error in err) {

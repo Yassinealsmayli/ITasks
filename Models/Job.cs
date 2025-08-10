@@ -3,16 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITasks.Models
 {
-    public class UserTask
+    public class Job
     {
         [Key]
-        public int Id { get; set; }
-
         [ForeignKey("UID")]
         public int UID { get; set; }
-        [ForeignKey("TaskID")]
-        public int TaskID { get; set; }
 
-        public bool isChecked { get; set; } = false;
+        public string Title {  get; set; }
     }
 }
