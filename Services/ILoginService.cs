@@ -11,14 +11,18 @@ namespace ITasks.Services
 
     public class LoginService:ILoginService
     {
+        ICurrentUser _user;
         IUserService _userService;
+        AppDbContext _dbContext;
 
-        public LoginService(IUserService userService)
+        public LoginService(ICurrentUser user,AppDbContext dbContext,IUserService userServive)
         {
-            _userService = userService;
+            _user = user;
+            _dbContext = dbContext;
+            _userService = userServive;
         }
         public void Login(User user) {
-            _userService.SetCurrentUser(user);
+            _user.SetCurrentUser(user);
         }
 
 
@@ -28,7 +32,7 @@ namespace ITasks.Services
             Models.User? user = _userService.GetUser(username);
             if (user != null)
             {
-                if (user.IsAdmin != isAdmin)
+                if (_dbContext.Admins.Find(user.UID) == null && isAdmin)
                 {
                     err.Add(user.Username + "is not an Adminstrator!");
                 }
@@ -39,7 +43,7 @@ namespace ITasks.Services
             }
             else
             {
-                err.Add("This Account dsnt exist!");
+                err.Add("This Account does'nt exist!");
             }
             u = user;
             return err;

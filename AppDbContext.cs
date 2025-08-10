@@ -3,15 +3,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ITasks
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
     {
         public DbSet<User> Users { get; set; }
 
         public DbSet<ITask> Tasks { get; set; }
 
-        public DbSet<UserTask> userTasks { get; set; }
+        public DbSet<UserTask> UserTasks { get; set; }
 
-        public static User? currentUser { get; set; } 
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public DbSet<Admins> Admins { get; set; }
     }
 }

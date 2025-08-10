@@ -21,11 +21,28 @@ namespace ITasks.Services
     {
         private AppDbContext _context;
 
-        public TaskService(AppDbContext context) {  _context = context; }
+        public TaskService(AppDbContext context) {  
+            _context = context;
+            int taskId = _context.Tasks.Add(new ITask() { 
+                TaskName="Add Database",
+                DeadLine= DateTime.Now,
+                Description="Add Database for the Application!",
+
+            }).Entity.TaskID;
+            
+            int userId = _context.Users.Add(new User()
+            {
+                Name = "Yassine",
+                Password = "Yassine",
+                Username = "Yassine"
+            }).Entity.UID;
+            _context.UserTasks.Add(new UserTask() { TaskID = taskId, UID = userId ,isChecked=false});
+            _context.SaveChanges();
+        }
 
         public async Task<int> AddTask(ITask task)
         {
-            ITask t = _context.Tasks.AddAsync(task).Result.Entity;
+            ITask t = (await _context.Tasks.AddAsync(task)).Entity;
             await _context.SaveChangesAsync();
             return t.TaskID;
         }
@@ -37,7 +54,7 @@ namespace ITasks.Services
 
         public async ValueTask<List<ITask>> GetUserTasks(int UID)
         {
-            List<UserTask> ut = await _context.userTasks.Where(t => t.UID == UID).ToListAsync();
+            List<UserTask> ut = await _context.UserTasks.Where(t => t.UID == UID).ToListAsync();
             List<ITask> tasks = new List<ITask>();
             foreach (UserTask item in ut)
             {
@@ -48,11 +65,11 @@ namespace ITasks.Services
 
         public async Task<ITask?> RemoveTask(int UID,int TaskID)
         {
-            ITask? res = _context.Tasks.FindAsync(TaskID).Result;
-            UserTask? ut = _context.userTasks.Where(i => i.TaskID == TaskID && i.UID == UID).First();
-            _context.userTasks.Remove(ut);
+            ITask? res = await _context.Tasks.FindAsync(TaskID);
+            UserTask? ut = _context.UserTasks.Where(i => i.TaskID == TaskID && i.UID == UID).First();
+            _context.UserTasks.Remove(ut);
             await _context.SaveChangesAsync();
-            if (await _context.userTasks.FindAsync(TaskID) == null)
+            if (await _context.UserTasks.FindAsync(TaskID) == null)
             {
                 
                 if (res == null)

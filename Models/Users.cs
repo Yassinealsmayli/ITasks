@@ -14,6 +14,5 @@ namespace ITasks.Models
         public string Username { get; set; } = "admin";
         public string Password { get; set; }
 
-        public bool IsAdmin { get; set; }
     }
 }

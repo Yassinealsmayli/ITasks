@@ -6,12 +6,12 @@
 <body>
     <form method="post">
         <label asp-for="@Model.vModel.Username"></label><br />
-        <input asp-for="@Model.vModel.Username" /><br />
+        <input asp-for="@Model.vModel.Username" name="bModel.Username" /><br />
         <span asp-validation-for="@Model.vModel.Username"></span>
         <label asp-for="@Model.vModel.Password"></label><br />
-        <input type="password" asp-for="@Model.vModel.Password" /><br />
+        <input type="password" asp-for="@Model.vModel.Password" name="bModel.Password" /><br />
         <span asp-validation-for="@Model.vModel.Password"></span>
-        <input type="checkbox" asp-for="@Model.vModel.isAdmin" />
+        <input type="checkbox" asp-for="@Model.vModel.isAdmin" name="bModel.isAdmin" />
         <label asp-for="@Model.vModel.isAdmin"></label><br />
         <button type="submit">Login</button><br />
         <div asp-validation-summary="All"></div><br />

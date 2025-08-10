@@ -1,10 +1,83 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "My Tasks";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="display-6">My Tasks</h1>
+        <a href="/CreateTask" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Add New Task
+        </a>
+    </div>
+
+    @if (Model.View.Tasks.Count == 0)
+    {
+        <div class="alert alert-info">
+            You don't have any tasks yet!
+        </div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var task in Model.View.Tasks)
+            {
+                <div class="col">
+                    <div class="card h-100 task-card @GetPriorityClass(task.DeadLine)">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">@task.TaskName</h5>
+                            <div class="dropdown">
+                                <input asp-for="@task.isChecked" class="btn btn-sm btn-outline-secondary"/>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">@task.Description</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar"></i> 
+                                    Due: @task.DeadLine.ToString("MMM dd, yyyy")
+                                </small>
+                                <span class="badge @GetDeadlineBadgeClass(task.DeadLine)">
+                                    @GetDaysRemaining(task.DeadLine)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
 </div>
+
+@functions {
+    string GetPriorityClass(DateTime deadline)
+    {
+        var daysRemaining = (deadline - DateTime.Now).TotalDays;
+        
+        if (daysRemaining < 0) return "task-overdue";
+        if (daysRemaining <= 1) return "task-urgent";
+        if (daysRemaining <= 3) return "task-warning";
+        return "task-normal";
+    }
+    
+    string GetDeadlineBadgeClass(DateTime deadline)
+    {
+        var daysRemaining = (deadline - DateTime.Now).TotalDays;
+        
+        if (daysRemaining < 0) return "bg-danger";
+        if (daysRemaining <= 1) return "bg-warning text-dark";
+        if (daysRemaining <= 3) return "bg-info text-dark";
+        return "bg-success";
+    }
+    
+    string GetDaysRemaining(DateTime deadline)
+    {
+        var days = (deadline - DateTime.Now).TotalDays;
+        
+        if (days < 0) return "Overdue!";
+        if (days < 1) return "Due today";
+        if (days < 2) return "1 day left";
+        return $"{(int)days} days left";
+    }
+}
